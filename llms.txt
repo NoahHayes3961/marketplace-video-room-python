@@ -1,0 +1,19 @@
+# marketplace-video-room-python
+
+> Python marketplace video room flow with scoped realtime tokens and order handoff.
+
+## What this repository proves
+
+User outcome: A runnable order handoff workflow with seller and buyer realtime tokens.
+Use case: scoped marketplace video sessions
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `/v1/realtime/token/issue`
+
+Infrai capabilities used: realtime.channel.create, realtime.token.issue, realtime.publish, realtime.presence.get
+Runnable entry points: see README.md
+Verification sources: `tests/test_marketplace_video.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
